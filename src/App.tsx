@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  createRoutesFromElements,
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+
+import PaginatorContextProvider from "./contexts/paginator-context";
+import Container from "./layout/container/container";
+import Character from "./pages/character/character";
+import Home from "./pages/home/home";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Container />}>
+      <Route
+        index
+        element={
+          <PaginatorContextProvider>
+            <Home />
+          </PaginatorContextProvider>
+        }
+      />
+      <Route path="character/:id" element={<Character />} />
+    </Route>
+  )
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
