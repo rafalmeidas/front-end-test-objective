@@ -8,7 +8,7 @@ export default function Container() {
   return (
     <>
       <Header />
-      <main className={styles.wrapper}>
+      <main data-testid="main" className={styles.wrapper}>
         <Outlet />
       </main>
     </>
