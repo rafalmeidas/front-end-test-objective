@@ -1,0 +1,32 @@
+.wrapper_page_numbers {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+
+  li {
+    .buttonPage {
+      min-width: 40px;
+      height: 32px;
+      border: 1px solid var(--dark-snow);
+      border-radius: 4px;
+      box-shadow: 0px 0px 3px #00000033;
+      cursor: pointer;
+    }
+
+    .unselected {
+      transition: all 0.3s;
+      background-color: var(--snow);
+
+      &:hover {
+        background-color: var(--dark-blue);
+        opacity: 0.8;
+        color: var(--white);
+      }
+    }
+
+    .selected {
+      background-color: var(--dark-blue);
+      color: var(--white);
+    }
+  }
+}
