@@ -16,6 +16,7 @@ export type InfoMediaListProps = {
   title: string;
   mediaType: MediaType;
   itemsPerPage?: number;
+  emptyMessage?: string;
 };
 
 export default function InfoMediaList({
@@ -23,6 +24,7 @@ export default function InfoMediaList({
   title,
   mediaType,
   itemsPerPage = 6,
+  emptyMessage = "Nenhuma mídia disponível",
 }: InfoMediaListProps) {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [media, setMedia] = useState<Media[]>([]);
@@ -61,13 +63,17 @@ export default function InfoMediaList({
       <div className={styles.wrapper_info_media_list}>
         <h2>{title}</h2>
         <section className={styles.media}>
-          {media.map(({ id, thumbnail, title }) => (
-            <InfoMediaCard
-              key={id}
-              src={generateThumbnail(thumbnail)}
-              title={title}
-            />
-          ))}
+          {media.length === 0 ? (
+            <span role="alert">{emptyMessage}</span>
+          ) : (
+            media.map(({ id, thumbnail, title }) => (
+              <InfoMediaCard
+                key={id}
+                src={generateThumbnail(thumbnail)}
+                title={title}
+              />
+            ))
+          )}
         </section>
         <div className={styles.wrapper_paginator}>
           <Paginator onChangePage={handleOnChangePage} />
