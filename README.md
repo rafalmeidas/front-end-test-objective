@@ -1,46 +1,149 @@
-# Getting Started with Create React App
+# 👋 front-end-test-objective
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto 'front-end-test-objective' é uma aplicação que foi desenvolvida como parte de um teste para uma posição como desenvolvedor front-end na Petize. O objetivo principal da aplicação é permitir que os usuários pesquisem perfis de desenvolvedores no GitHub.
 
-## Available Scripts
+O 'front-end-test-objective' é uma aplicação prática e funcional que demonstra habilidades de desenvolvimento front-end, incluindo a integração com a API do GitHub e a criação de interfaces de usuário intuitivas e responsivas. O aplicativo visa proporcionar uma experiência simples e eficaz para os usuários que desejam explorar e se conectar com a comunidade de desenvolvedores do GitHub.
 
-In the project directory, you can run:
+## 📚 Índice
 
-### `npm start`
+- [ℹ️ Sobre](#ℹ%EF%B8%8F-sobre)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [✨ Recursos](#-recursos)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [🛠️ Pré-requisitos](#%EF%B8%8F-pré-requisitos)
 
-### `npm test`
+- [⚙️ Instalação](#%EF%B8%8F-instalação)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [🧪 Testar](#-testar)
 
-### `npm run build`
+- [🚀 Como Usar](#-como-usar)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [🤝 Contribuição](#contribuição)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [📝 Licença](#-licença)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ℹ️ Sobre
 
-### `npm run eject`
+Este é um projeto de teste para desenvolvedores front-end React Pleno que visa avaliar suas habilidades na criação de aplicações web interativas e responsivas. A aplicação consome a API da Marvel para listar personagens icônicos do universo Marvel. Além disso, oferece a possibilidade de explorar detalhes dos personagens, incluindo informações sobre histórias em quadrinhos, eventos, séries e histórias em que eles apareceram.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## ✨ Recursos
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A aplicação é composta por duas telas principais:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1.  **Tela de Pesquisa (Home):** Exiba uma lista de personagens da Marvel, mostrando suas imagens e nomes, com a possibilidade de páginas e buscar personagens pelo nome.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2.  **Tela de Detalhes:** Ao clicar em um personagem, você poderá ver informações detalhadas, como histórias em quadrinhos em que eles apareceram, eventos em que participaram, séries em que foram destaque e suas histórias e tudo páginado.
 
-## Learn More
+## 🛠️ Pré-requisitos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Antes de começar a usar o projeto 'front-end-test-objective', certifique-se de que você tenha os seguintes requisitos atendidos:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Conhecimentos Necessários
+
+- Familiaridade com desenvolvimento front-end e conceitos básicos de React.
+
+- Compreensão de testes unitários e familiaridade com a estrutura de testes Jest.
+
+### Estrutura do Projeto e Libs
+
+#### Estrutura do Projeto
+
+```
+front-end-test-objective/
+│
+├─ src/
+│ ├─ __tests__/ # Testes
+│ ├─ assets/ # Imagens e ícones
+│ ├─ components/ # Componentes reutilizáveis
+│ ├─ contexts/ # Contextos reutilizáveis
+│ ├─ hooks/ # Custom Hooks reutilizáveis
+│ ├─ layout/ # Componentes de layout da aplicação
+│ ├─ pages/ # Páginas da aplicação
+│ ├─ types/ # Tipos de dados e interfaces
+│ ├─ utils/ # Utilitários e funções auxiliares
+│ │
+│ ├─ app.tsx # Componente raiz da aplicação
+│ ├─ main.tsx # Ponto de entrada da renderização
+│
+├─ README.md # Documentação do projeto
+└─ package.json # Informações e dependências do projeto
+```
+
+#### Libs
+
+Bibliotecas utilizadas e motivação:
+
+- **md5:** O MD5 é uma ferramenta confiável para manter a integridade e a autenticidade dos dados, tornando-o essencial em muitos contextos de desenvolvimento e segurança de informações.
+- **react-router-dom:** O uso do react-router-dom no React é essencial para criar aplicativos de página única (SPA) com navegação suave e dinâmica. Com suas rotas declarativas e capacidade de renderizar componentes específicos para cada URL, o react-router-dom simplifica a organização do aplicativo e oferece uma experiência de usuário mais fluida ao alternar entre diferentes páginas e estados. Além disso, ele integra-se perfeitamente com os recursos do React, permitindo criar interfaces de usuário interativas e responsivas de maneira eficiente.
+
+#### Libs de teste
+
+- **axios-mock-adapter:** A utilização do axios-mock-adapter no React é fundamental para o desenvolvimento de testes de integração eficazes e realistas. Com essa ferramenta, é possível simular respostas de APIs externas de maneira controlada e previsível, permitindo testar o comportamento do aplicativo em diferentes cenários sem depender de uma API real. Isso agiliza a detecção de bugs, melhora a cobertura de testes e aumenta a confiabilidade do código, contribuindo para a qualidade geral do projeto.
+
+## ⚙️ Instalação
+
+- [Node.js - v18.17.1 ou superior](https://nodejs.org/): O projeto utiliza o Node.js para executar e construir a aplicação. Certifique-se de ter o Node.js instalado em sua máquina.
+
+- [NPM - v9.6.7 ou superior](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/): O gerenciador de pacotes Node.js é necessário para instalar e gerenciar as dependências do projeto.
+
+Passo 1 - **Clone o repositório do projeto para sua máquina local usando o seguinte comando:**
+
+```sh
+
+https://github.com/rafalmeidas/front-end-test-objective.git
+
+```
+
+Passo 2 - **Ou [baixe](https://github.com/rafalmeidas/front-end-test-objective/archive/refs/heads/main.zip) o .zip e descompacte:**
+
+Passo 3 - **Navegue para a pasta do projeto usando o terminal:**
+
+```sh
+
+cd front-end-test-objective
+
+```
+
+Passo 4 - **Instale as dependências do projeto usando NPM:**
+
+```sh
+
+npm install
+
+```
+
+Passo 5 - **Inicie a Aplicação:**
+
+```sh
+
+npm start
+
+```
+
+Pronto, basta acessar um navegador de sua preferência, e acessar o link a seguir:
+
+- [🌐 front-end-test-objective](http://localhost:3000/)
+
+Passo 6 - **Gerar Build de Deploy (Opcional):**
+
+```sh
+
+npm run build
+
+```
+
+## 🧪 Testar
+
+Após efetuar o passo de [⚙️ Instalação](#instalação) execute o seguinte comando:
+
+```sh
+
+npm run test
+
+```
+
+## 📝 Licença
+
+---
+
+Feito com 💙 por Rafael.
