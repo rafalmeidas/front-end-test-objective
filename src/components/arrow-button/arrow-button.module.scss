@@ -1,0 +1,51 @@
+.wrapper_arrow_button {
+  width: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover i {
+    border-color: var(--dark-blue);
+  }
+
+  .arrow_left,
+  .arrow_right {
+    height: 10px;
+    width: 10px;
+    border: 1px solid var(--smoke);
+    border-width: 2px 2px 0 0;
+  }
+
+  .arrow_left {
+    transform: rotate(-135deg);
+  }
+
+  .arrow_right {
+    transform: rotate(45deg);
+  }
+
+  .container_one_arrow,
+  .container_double_arrow {
+    display: flex;
+    align-items: center;
+  }
+
+  .container_one_arrow {
+    width: 12px;
+  }
+
+  .container_double_arrow {
+    width: 20px;
+  }
+}
+
+.isVisible {
+  visibility: visible;
+}
+
+.isNotVisible {
+  visibility: hidden;
+}
