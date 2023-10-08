@@ -20,7 +20,7 @@ export const handleResponse = async <T>(response: Response) => {
   return data.data as T;
 };
 
-export const generateThumbnail = (thumb: Thumbnail): string => {
+export const generateThumbnail = (thumb?: Thumbnail | null): string => {
   if (!thumb) return "";
 
   return `${thumb.path}.${thumb.extension}`;
