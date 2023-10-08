@@ -1,0 +1,40 @@
+.wrapper_home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: calc(32px * 3) + 40px;
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .alert {
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  .card_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+  }
+}
+
+.wrapper_paginator {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
