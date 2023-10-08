@@ -31,8 +31,10 @@ export default function ArrowButton({
           isDouble ? styles.container_double_arrow : styles.container_one_arrow
         }
       >
-        <i className={arrowOrientation}></i>
-        {isDouble ? <i className={arrowOrientation}></i> : null}
+        <i data-testid="orientation" className={arrowOrientation}></i>
+        {isDouble ? (
+          <i data-testid="orientation" className={arrowOrientation}></i>
+        ) : null}
       </div>
     </button>
   );
