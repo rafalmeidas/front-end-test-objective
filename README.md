@@ -1,3 +1,5 @@
+[![Objective Test Front-end](https://github.com/rafalmeidas/front-end-test-objective/actions/workflows/front-end-tests.yml/badge.svg)](https://github.com/rafalmeidas/front-end-test-objective/actions/workflows/front-end-tests.yml)
+
 # 👋 front-end-test-objective
 
 O projeto 'front-end-test-objective' é uma aplicação que foi desenvolvida como parte de um teste para uma posição como desenvolvedor front-end na Petize. O objetivo principal da aplicação é permitir que os usuários pesquisem perfis de desenvolvedores no GitHub.
