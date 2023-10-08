@@ -43,8 +43,6 @@ export default function Home() {
 
     if (delayedSearch) clearTimeout(delayedSearch);
 
-    if (!value) return;
-
     const novoDelayedSearch = setTimeout(() => {
       loadCharacters(value.toLocaleLowerCase());
     }, 500);
@@ -80,7 +78,7 @@ export default function Home() {
 
         {characters.length === 0 ? (
           <span className={styles.alert} role="alert" aria-label={alertMessage}>
-            {alertMessage}
+            {!isLoading ? alertMessage : ""}
           </span>
         ) : (
           <>
