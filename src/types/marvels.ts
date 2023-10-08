@@ -28,7 +28,7 @@ export interface Character {
 export interface Media {
   id: number;
   title: string;
-  thumbnail: Thumbnail;
+  thumbnail: Thumbnail | null;
 }
 
 export interface CharactersDataWrapper {
