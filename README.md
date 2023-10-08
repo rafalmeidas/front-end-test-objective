@@ -78,15 +78,11 @@ Bibliotecas utilizadas e motivação:
 - **md5:** O MD5 é uma ferramenta confiável para manter a integridade e a autenticidade dos dados, tornando-o essencial em muitos contextos de desenvolvimento e segurança de informações.
 - **react-router-dom:** O uso do react-router-dom no React é essencial para criar aplicativos de página única (SPA) com navegação suave e dinâmica. Com suas rotas declarativas e capacidade de renderizar componentes específicos para cada URL, o react-router-dom simplifica a organização do aplicativo e oferece uma experiência de usuário mais fluida ao alternar entre diferentes páginas e estados. Além disso, ele integra-se perfeitamente com os recursos do React, permitindo criar interfaces de usuário interativas e responsivas de maneira eficiente.
 
-#### Libs de teste
-
-- **axios-mock-adapter:** A utilização do axios-mock-adapter no React é fundamental para o desenvolvimento de testes de integração eficazes e realistas. Com essa ferramenta, é possível simular respostas de APIs externas de maneira controlada e previsível, permitindo testar o comportamento do aplicativo em diferentes cenários sem depender de uma API real. Isso agiliza a detecção de bugs, melhora a cobertura de testes e aumenta a confiabilidade do código, contribuindo para a qualidade geral do projeto.
-
 ## ⚙️ Instalação
 
 - [Node.js - v18.17.1 ou superior](https://nodejs.org/): O projeto utiliza o Node.js para executar e construir a aplicação. Certifique-se de ter o Node.js instalado em sua máquina.
 
-- [NPM - v9.6.7 ou superior](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/): O gerenciador de pacotes Node.js é necessário para instalar e gerenciar as dependências do projeto.
+- [NPM - v9.6.7 ou superior](https://www.npmjs.com/): O gerenciador de pacotes Node.js é necessário para instalar e gerenciar as dependências do projeto.
 
 Passo 1 - **Clone o repositório do projeto para sua máquina local usando o seguinte comando:**
 
