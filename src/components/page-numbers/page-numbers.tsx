@@ -2,7 +2,7 @@ import usePaginator from "../../hooks/usePaginator";
 
 import styles from "./page-numbers.module.scss";
 
-type PageNumbersProps = {
+export type PageNumbersProps = {
   onChangePage: (page: number) => void;
 };
 
