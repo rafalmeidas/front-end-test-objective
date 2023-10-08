@@ -32,7 +32,7 @@ Este é um projeto de teste para desenvolvedores front-end React Pleno que visa 
 
 A aplicação é composta por duas telas principais:
 
-1.  **Tela de Pesquisa (Home):** Exiba uma lista de personagens da Marvel, mostrando suas imagens e nomes, com a possibilidade de páginas e buscar personagens pelo nome.
+1.  **Tela de Pesquisa (Home):** Exiba uma lista de personagens da Marvel, mostrando suas imagens e nomes, com a possibilidade de páginar e buscar personagens pelo nome.
 
 2.  **Tela de Detalhes:** Ao clicar em um personagem, você poderá ver informações detalhadas, como histórias em quadrinhos em que eles apareceram, eventos em que participaram, séries em que foram destaque e suas histórias e tudo páginado.
 
