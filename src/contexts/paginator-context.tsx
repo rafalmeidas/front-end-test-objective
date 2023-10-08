@@ -25,18 +25,24 @@ export const PaginatorContext = createContext({
 });
 
 type PaginatorContextProviderProps = {
+  totalResults?: number;
   itemsPerPage?: number;
+  allPages?: number[];
+  currentPage?: number;
 } & PropsWithChildren;
 
 export default function PaginatorContextProvider({
   children,
+  totalResults: results = 0,
   itemsPerPage = 10,
+  allPages: allPagesData = [],
+  currentPage: currentPageData = 1,
 }: PaginatorContextProviderProps) {
   const [pages, setPages] = useState<number[]>([]);
-  const [allPages, setAllPages] = useState<number[]>([]);
+  const [allPages, setAllPages] = useState<number[]>(allPagesData);
 
-  const [totalResults, setTotalResults] = useState<number>(0);
-  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [totalResults, setTotalResults] = useState<number>(results);
+  const [currentPage, setCurrentPage] = useState<number>(currentPageData);
 
   const { width } = useMedia();
 
