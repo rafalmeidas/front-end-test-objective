@@ -4,7 +4,7 @@ import usePaginator from "../../hooks/usePaginator";
 
 import styles from "./paginator.module.scss";
 
-type PaginatorProps = {
+export type PaginatorProps = {
   onChangePage: (page: number) => void;
 };
 
