@@ -78,20 +78,42 @@ export default function Character() {
         <RenderProvider
           id={id}
           elem={
-            <InfoMediaList title="Histórias em quadrinhos" mediaType="comics" />
+            <InfoMediaList
+              title="Histórias em quadrinhos"
+              mediaType="comics"
+              emptyMessage="Nenhum quadrinho encontrado."
+            />
           }
         />
         <RenderProvider
           id={id}
-          elem={<InfoMediaList title="Series" mediaType="series" />}
+          elem={
+            <InfoMediaList
+              title="Series"
+              mediaType="series"
+              emptyMessage="Nenhuma série encontrada."
+            />
+          }
         />
         <RenderProvider
           id={id}
-          elem={<InfoMediaList title="Histórias" mediaType="stories" />}
+          elem={
+            <InfoMediaList
+              title="Histórias"
+              mediaType="stories"
+              emptyMessage="Nenhuma história encontrada."
+            />
+          }
         />
         <RenderProvider
           id={id}
-          elem={<InfoMediaList title="Eventos" mediaType="events" />}
+          elem={
+            <InfoMediaList
+              title="Eventos"
+              mediaType="events"
+              emptyMessage="Nenhum evento encontrado."
+            />
+          }
         />
       </div>
     </>
