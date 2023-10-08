@@ -127,4 +127,45 @@ describe("<InfoMediaList />", () => {
 
     expect(screen.getByText("Earth X (1999 - 2000)")).toBeInTheDocument();
   });
+
+  it("should display a standard empty media message when receiving an empty array", async () => {
+    jest
+      .spyOn(fetch, "getMedia")
+      .mockImplementation(() => Promise.resolve({ total: 2, results: [] }));
+
+    await act(async () => {
+      render(
+        <Wrapper
+          id={1}
+          title="Test Title"
+          mediaType="series"
+          itemsPerPage={1}
+        />
+      );
+    });
+
+    expect(screen.getByRole("alert")).toHaveTextContent(
+      "Nenhuma mídia disponível."
+    );
+  });
+
+  it("should display a custom empty media message, when receiving an empty array", async () => {
+    jest
+      .spyOn(fetch, "getMedia")
+      .mockImplementation(() => Promise.resolve({ total: 2, results: [] }));
+
+    await act(async () => {
+      render(
+        <Wrapper
+          id={1}
+          title="Test Title"
+          mediaType="series"
+          itemsPerPage={1}
+          emptyMessage="Sem mídias."
+        />
+      );
+    });
+
+    expect(screen.getByRole("alert")).toHaveTextContent("Sem mídias.");
+  });
 });
