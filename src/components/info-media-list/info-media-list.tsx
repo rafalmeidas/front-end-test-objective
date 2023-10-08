@@ -24,7 +24,7 @@ export default function InfoMediaList({
   title,
   mediaType,
   itemsPerPage = 6,
-  emptyMessage = "Nenhuma mídia disponível",
+  emptyMessage = "Nenhuma mídia disponível.",
 }: InfoMediaListProps) {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [media, setMedia] = useState<Media[]>([]);
