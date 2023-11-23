@@ -1,10 +1,10 @@
-[![Objective Test Front-end](https://github.com/rafalmeidas/front-end-test-objective/actions/workflows/front-end-tests.yml/badge.svg)](https://github.com/rafalmeidas/front-end-test-objective/actions/workflows/front-end-tests.yml)
+[![Objective Test Front-end](https://github.com/rafalmeidas/marvel-v1/actions/workflows/front-end-tests.yml/badge.svg)](https://github.com/rafalmeidas/marvel-v1/actions/workflows/front-end-tests.yml)
 
-# 👋 front-end-test-objective
+# 👋 marvel-v1
 
-O projeto 'front-end-test-objective' é uma aplicação que foi desenvolvida como parte de um teste para uma posição como desenvolvedor front-end na Petize. O objetivo principal da aplicação é permitir que os usuários pesquisem perfis de desenvolvedores no GitHub.
+O projeto 'marvel-v1' é uma aplicação que foi desenvolvida como parte de um teste para uma posição como desenvolvedor front-end na Objective. O objetivo principal da aplicação é permitir que os usuários pesquisem perfis de desenvolvedores no GitHub.
 
-O 'front-end-test-objective' é uma aplicação prática e funcional que demonstra habilidades de desenvolvimento front-end, incluindo a integração com a API do GitHub e a criação de interfaces de usuário intuitivas e responsivas. O aplicativo visa proporcionar uma experiência simples e eficaz para os usuários que desejam explorar e se conectar com a comunidade de desenvolvedores do GitHub.
+O 'marvel-v1' é uma aplicação prática e funcional que demonstra habilidades de desenvolvimento front-end, incluindo a integração com a API do GitHub e a criação de interfaces de usuário intuitivas e responsivas. O aplicativo visa proporcionar uma experiência simples e eficaz para os usuários que desejam explorar e se conectar com a comunidade de desenvolvedores do GitHub.
 
 ## 📚 Índice
 
@@ -38,7 +38,7 @@ A aplicação é composta por duas telas principais:
 
 ## 🛠️ Pré-requisitos
 
-Antes de começar a usar o projeto 'front-end-test-objective', certifique-se de que você tenha os seguintes requisitos atendidos:
+Antes de começar a usar o projeto 'marvel-v1', certifique-se de que você tenha os seguintes requisitos atendidos:
 
 ### Conhecimentos Necessários
 
@@ -51,7 +51,7 @@ Antes de começar a usar o projeto 'front-end-test-objective', certifique-se de 
 #### Estrutura do Projeto
 
 ```
-front-end-test-objective/
+marvel-v1/
 │
 ├─ src/
 │ ├─ __tests__/ # Testes
@@ -88,17 +88,17 @@ Passo 1 - **Clone o repositório do projeto para sua máquina local usando o seg
 
 ```sh
 
-https://github.com/rafalmeidas/front-end-test-objective.git
+https://github.com/rafalmeidas/marvel-v1.git
 
 ```
 
-Passo 2 - **Ou [baixe](https://github.com/rafalmeidas/front-end-test-objective/archive/refs/heads/main.zip) o .zip e descompacte:**
+Passo 2 - **Ou [baixe](https://github.com/rafalmeidas/marvel-v1/archive/refs/heads/main.zip) o .zip e descompacte:**
 
 Passo 3 - **Navegue para a pasta do projeto usando o terminal:**
 
 ```sh
 
-cd front-end-test-objective
+cd marvel-v1
 
 ```
 
@@ -120,7 +120,7 @@ npm start
 
 Pronto, basta acessar um navegador de sua preferência, e acessar o link a seguir:
 
-- [🌐 front-end-test-objective](http://localhost:3000/)
+- [🌐 marvel-v1](http://localhost:3000/)
 
 Passo 6 - **Gerar Build de Deploy (Opcional):**
 
