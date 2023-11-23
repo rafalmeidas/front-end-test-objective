@@ -1,4 +1,4 @@
-[![Objective Test Front-end](https://github.com/rafalmeidas/marvel-v1/actions/workflows/front-end-tests.yml/badge.svg)](https://github.com/rafalmeidas/marvel-v1/actions/workflows/front-end-tests.yml)
+[![Marvel V1](https://github.com/rafalmeidas/marvel-v1/actions/workflows/front-end-tests.yml/badge.svg)](https://github.com/rafalmeidas/marvel-v1/actions/workflows/front-end-tests.yml)
 
 # 👋 marvel-v1
 
