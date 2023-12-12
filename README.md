@@ -4,7 +4,7 @@
 
 O projeto 'marvel-v1' é uma aplicação que foi desenvolvida como parte de um teste para uma posição como desenvolvedor front-end na Objective. O objetivo principal da aplicação é permitir que os usuários pesquisem perfis de desenvolvedores no GitHub.
 
-O 'marvel-v1' é uma aplicação prática e funcional que demonstra habilidades de desenvolvimento front-end, incluindo a integração com a API do GitHub e a criação de interfaces de usuário intuitivas e responsivas. O aplicativo visa proporcionar uma experiência simples e eficaz para os usuários que desejam explorar e se conectar com a comunidade de desenvolvedores do GitHub.
+O 'marvel-v1' é uma aplicação prática e funcional que demonstra habilidades de desenvolvimento front-end, incluindo a integração com a API da Marvel e a criação de interfaces de usuário intuitivas e responsivas. O aplicativo visa proporcionar uma experiência simples e eficaz para os usuários que desejam explorar os personagens do universo Marvel.
 
 ## 📚 Índice
 
