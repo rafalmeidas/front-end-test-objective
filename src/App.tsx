@@ -1,6 +1,6 @@
 import {
   createRoutesFromElements,
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
   Route,
 } from "react-router-dom";
@@ -10,7 +10,7 @@ import Container from "./layout/container/container";
 import Character from "./pages/character/character";
 import Home from "./pages/home/home";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<Container />}>
       <Route

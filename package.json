@@ -1,5 +1,6 @@
 {
   "name": "test-front-end-objective",
+  "homepage": "https://rafalmeidas.github.io/marvel-v1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
