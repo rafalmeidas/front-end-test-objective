@@ -1,7 +1,7 @@
 import { getHash, getTimeStamp, handleResponse } from "./functions";
 import { CharactersDataWrapper, ComicsDataWrapper } from "../types/marvels";
 
-const API_BASE_URL = "http://gateway.marvel.com/v1/public";
+const API_BASE_URL = "https://gateway.marvel.com/v1/public";
 const API_PUBLIC_KEY = "e14c1af910e50f7fb739fb86491ef585";
 const API_PRIVATE_KEY = "ba6763fd121abe2988244fdd63da661d6e30ff02";
 
