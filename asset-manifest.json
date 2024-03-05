@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/marvel-v1/static/css/main.caea967a.css",
-    "main.js": "/marvel-v1/static/js/main.2d5f8290.js",
+    "main.js": "/marvel-v1/static/js/main.52e1de5f.js",
     "static/js/453.f1e6c809.chunk.js": "/marvel-v1/static/js/453.f1e6c809.chunk.js",
     "static/media/objective.svg": "/marvel-v1/static/media/objective.11a5855b5f5c30df1a8deaf3f7e0fc3c.svg",
     "static/media/back-icon.svg": "/marvel-v1/static/media/back-icon.e586d6c567b60d8ddb23945d60bf523a.svg",
     "index.html": "/marvel-v1/index.html",
     "static/media/search.svg": "/marvel-v1/static/media/search.b51cac1a6d7f388e46d119d5896c5021.svg",
     "main.caea967a.css.map": "/marvel-v1/static/css/main.caea967a.css.map",
-    "main.2d5f8290.js.map": "/marvel-v1/static/js/main.2d5f8290.js.map",
+    "main.52e1de5f.js.map": "/marvel-v1/static/js/main.52e1de5f.js.map",
     "453.f1e6c809.chunk.js.map": "/marvel-v1/static/js/453.f1e6c809.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.caea967a.css",
-    "static/js/main.2d5f8290.js"
+    "static/js/main.52e1de5f.js"
   ]
 }
